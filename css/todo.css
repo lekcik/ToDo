@@ -21,3 +21,36 @@ header {
     padding-right: var(--padding-index);
 }
 
+header .addTaskWrapper .addTaskBtn {
+    background: none;
+    border: none;
+    color: var(--white-clr-main);
+    font-size: calc(0.5rem + var(--font-size-general));
+    font-weight: 700;
+    cursor: pointer;
+    transition: text-shadow var(--transition-fast);
+}
+
+header .addTaskWrapper {
+    position: relative;
+}
+
+header .sortByWrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-index);
+    cursor: pointer;
+    transition: text-shadow var(--transition-fast);
+}
+
+/* header hover */
+
+header .addTaskWrapper:hover .addTaskBtn {
+    text-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
+}
+
+header .sortByWrapper:hover span:has(+ h2),
+header .sortByWrapper:hover span + h2 {
+    text-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
+}
+
