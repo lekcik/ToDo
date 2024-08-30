@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin-top: calc(0.1rem + var(--margin-index));
+    display: inline-block;
+    border: 1px solid var(--white-clr-main);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--padding-index);
+    padding-right: var(--padding-index);
+}
+

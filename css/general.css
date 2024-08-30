@@ -1,4 +1,9 @@
-body {
+html {
+    background-image: linear-gradient(150deg, var(--background-color-first), var(--background-color-second));
+    background-size: cover;
+    background-attachment: fixed;
+
     font-size: var(--font-size-general);
+    color: var(--white-clr-main);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
