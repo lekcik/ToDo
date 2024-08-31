@@ -45,37 +45,33 @@
                 <div class="header">Importance</div>
                 <div class="header"></div>
                 <div>
-                    <input type="text" maxlength="25">
+                    <input class="jsTextInput" type="text" maxlength="25">
                 </div>
                 <div>
-                    <input type="date">
+                    <input class="jsDateInput" type="date">
                 </div>
                 <div>
-                    <select id="improtanceDropdown">
-                        <option value="low">Low</option>
-                        <option value="slightly">Slight</option>
-                        <option value="normal" selected>Normal</option>
-                        <option value="high">High</option>
-                        <option value="extreme">Extreme</option>
+                    <select class="jsImportanceInput" id="improtanceDropdown">
+                        <option value="Low">Low</option>
+                        <option value="Slight">Slight</option>
+                        <option value="Normal" selected>Normal</option>
+                        <option value="High">High</option>
+                        <option value="Extreme">Extreme</option>
                     </select>
                 </div>
                 <div>
-                    <button>Add</button>
+                    <button onclick="addTask()">Add</button>
                 </div>
             </div>
         </section>
 
-        <section aria-label="Tasks list">
-            <section class="taskContainer">
-                <h3>Do the dishes</h3>
-                <p>Until: 09/01/2024</p>
-                <p class="low">Low importance</p>
-                <button>Delete</button>
-            </section>
+        <section class="jsTasksList" aria-label="Tasks list">
+
         </section>
     </main>
 
-    <script src="../js/todo.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/tasks.js"></script>
 </body>
 
 </html>

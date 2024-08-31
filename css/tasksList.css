@@ -1,20 +1,20 @@
-.low {
+.Low {
     color: rgb(74, 144, 226);
 }
 
-.slight {
+.Slight {
     color: rgb(126, 211, 33);
 }
 
-.normal {
+.Normal {
     color: rgb(255, 195, 0);
 }
 
-.high {
+.High {
     color: rgb(255, 87, 34);
 }
 
-.extreme {
+.Extreme {
     color: rgb(244, 67, 54);
     font-weight: 600;
 }
@@ -22,11 +22,37 @@
 .taskContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: var(--padding-index);
     padding-right: var(--padding-index);
 }
 
+.taskContainer > *:not(:last-child) {
+    flex: 1;
+}
+
 .taskContainer:not(:last-of-type) {
     border-bottom: 1px solid var(--white-clr-main);
+}
+
+.taskContainer button {
+    padding: calc(-0.4rem + var(--padding-index)) calc(var(--padding-index));
+    max-width: 14.5vw;
+    font-size: calc(-0.2rem + var(--font-size-general));
+    background-color: transparent;
+    border: 0.1rem solid var(--white-clr-main);
+    border-radius: 0.5rem;
+    color: var(--white-clr-main);
+
+    transition: all var(--transition-fast);
+}
+
+/* Task container transitions */
+
+.taskContainer button:hover {
+    box-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
+}
+
+.taskContainer button:active {
+    background-color: rgba(255, 255, 255, 0.1);
 }

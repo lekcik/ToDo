@@ -1,3 +1,5 @@
+/* header code */
+
 let openFormBtn = document.querySelector('.jsOpenFormBtn');
 let formSection = document.querySelector('.jsAddTaskSection');
 
