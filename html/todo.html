@@ -16,7 +16,7 @@
     <main>
         <header>
             <div class="addTaskWrapper">
-                <button class="addTaskBtn" aria-label="Add task">+</button>
+                <button class="addTaskBtn jsOpenFormBtn" aria-label="Add task">+</button>
             </div>
             <div class="sortByWrapper">
                 <span class="downPointer">∨</span>
@@ -26,7 +26,7 @@
 
         <hr>
 
-        <section aria-label="Add task form">
+        <section aria-label="Add task form" class="addTaskSection jsAddTaskSection">
             <div class="addTaskFormWrapper">
                 <div class="header">Task</div>
                 <div class="header">Date</div>
@@ -47,6 +47,8 @@
 
         </section>
     </main>
+
+    <script type="module" src="../js/todo.js"></script>
 </body>
 
 </html>

@@ -48,6 +48,18 @@ header .sortByWrapper:hover span + h2 {
 
 /* Add task form */
 
+.addTaskSection {
+    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--transition-fast) ease;
+}
+
+.addTaskSection.show {
+    display: block;
+    transform: scaleY(1);
+}
+
 .addTaskFormWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 0.5fr;
