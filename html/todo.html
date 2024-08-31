@@ -19,8 +19,19 @@
                 <button class="addTaskBtn jsOpenFormBtn" aria-label="Add task">+</button>
             </div>
             <div class="sortByWrapper">
-                <span class="downPointer">∨</span>
-                <h2>Sort By</h2>
+                <div class="jsSortByBtn">
+                    <span>∨</span>
+                    <h2>Sort By</h2>
+                </div>
+
+                <div class="radio jsRadio" aria-label="Sort options list">
+                    <input class="radioInput" type="radio" value="name" name="taskChoose" id="radio1">
+                    <label class="radioLabel" for="radio1">Name</label>
+                    <input class="radioInput" type="radio" value="date" name="taskChoose" id="radio2">
+                    <label class="radioLabel" for="radio2">Date</label>
+                    <input class="radioInput" type="radio" value="importance" name="taskChoose" id="radio3">
+                    <label class="radioLabel" for="radio3">Importance</label>
+                </div>
             </div>
         </header>
 

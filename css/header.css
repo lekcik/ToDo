@@ -30,9 +30,47 @@ header .sortByWrapper {
     transition: all var(--transition-fast);
 }
 
-header .sortByWrapper:hover span:has(+ h2),
-header .sortByWrapper:hover span + h2 {
+header .sortByWrapper div:has(span + h2) {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-index);
+}
+
+header .sortByWrapper h2 {
     transition: all var(--transition-fast);
+
+    margin-right: var(--margin-index);
+}
+
+header .sortByWrapper .radio {
+    display: none;
+    transform: scaleX(0);
+    transform-origin: right;
+    overflow: hidden;
+    border-radius: 3rem;
+    box-shadow: 0 0 0.3rem var(--white-clr-main);
+    transition: all var(--transition-fast);
+}
+
+header .sortByWrapper .radio.show {
+    display: inline-flex;
+    transform: scaleX(1);
+}
+
+header .sortByWrapper .radio .radioInput {
+    display: none;
+}
+
+header .sortByWrapper .radio .radioLabel {
+    padding: calc(-1rem + var(--padding-index)) calc(var(--padding-index));
+    cursor: pointer;
+    transition: all var(--transition-fast);
+
+    padding: var(--padding-index) var(--padding-index);
+}
+
+header .sortByWrapper .radio .radioLabel:not(:last-of-type) {
+    border-right: 0.1rem solid var(--white-clr-main-opacity-low);
 }
 
 /* header transitions */
@@ -41,9 +79,17 @@ header .addTaskWrapper:hover .addTaskBtn {
     text-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
 }
 
-header .sortByWrapper:hover span:has(+ h2),
-header .sortByWrapper:hover span + h2 {
+header .sortByWrapper div:has(span + h2):hover {
     text-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
+}
+
+header .sortByWrapper .radio .radioLabel:hover {
+    background-color: var(--white-clr-main-opacity-low);
+}
+
+header .sortByWrapper .radio .radioInput:checked + .radioLabel {
+    background-color: var(--white-clr-main);
+    color: var(--black-clr-main);
 }
 
 /* Add task form */
@@ -103,3 +149,11 @@ header .sortByWrapper:hover span + h2 {
 .addTaskFormWrapper button:active {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+
+/* todo:
+
+add button add animation 
+
+/*

@@ -5,6 +5,7 @@
     --font-size-general: calc(0.2rem + 1.3vw);
 
     --white-clr-main: rgb(232, 200, 249);
+    --white-clr-main-opacity-low: rgba(232, 200, 249, 0.2);
     --black-clr-main: #2e073f;
     --shadow-color-main: rgb(162, 234, 237);
 

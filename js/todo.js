@@ -20,3 +20,22 @@ openFormBtn.addEventListener('click', () => {
         }, 10); 
     }
 });
+
+let openSortFormBtn = document.querySelector('.jsSortByBtn');
+let sortForm = document.querySelector('.jsRadio');
+
+openSortFormBtn.addEventListener('click', () => {
+    if (sortForm.classList.contains('show')) {
+        sortForm.classList.remove('show');
+
+        setTimeout(() => {
+            sortForm.style.display = 'none';
+        }, transitionDuration);
+    } else {
+        sortForm.style.display = 'inline-flex';
+
+        setTimeout(() => {
+            sortForm.classList.add('show');
+        }, 10);
+    }
+})
