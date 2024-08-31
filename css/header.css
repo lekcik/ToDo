@@ -108,7 +108,7 @@ header .sortByWrapper .radio .radioInput:checked + .radioLabel {
 
 .addTaskFormWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
     row-gap: var(--gap-index);
     column-gap: var(--gap-index);
     padding-left: var(--padding-index);
@@ -120,9 +120,10 @@ header .sortByWrapper .radio .radioInput:checked + .radioLabel {
 }
 
 .addTaskFormWrapper button,
-.addTaskFormWrapper input {
+.addTaskFormWrapper input,
+.addTaskFormWrapper select {
     padding: calc(-0.4rem + var(--padding-index)) calc(var(--padding-index));
-    max-width: 20vw;
+    max-width: 14.5vw;
     font-size: calc(-0.2rem + var(--font-size-general));
     background-color: transparent;
     border: 0.1rem solid var(--white-clr-main);
@@ -132,13 +133,19 @@ header .sortByWrapper .radio .radioInput:checked + .radioLabel {
     transition: all var(--transition-fast);
 }
 
+.addTaskFormWrapper select option {
+    background-color: var(--white-clr-main);
+    color: var(--black-clr-main);
+}
+
 .addTaskFormWrapper input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(90%) sepia(25%) saturate(400%) hue-rotate(245deg) brightness(95%) contrast(85%);
 }
 
 /* Add task form transitions */
 
-.addTaskFormWrapper input:focus {
+.addTaskFormWrapper input:focus,
+.addTaskFormWrapper select:focus {
     box-shadow: 0rem 0rem 0.5rem var(--shadow-color-main);
 }
 
@@ -150,6 +157,9 @@ header .sortByWrapper .radio .radioInput:checked + .radioLabel {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.addTaskFormWrapper select option:hover {
+    background-color: black;
+}
 
 
 /* todo:

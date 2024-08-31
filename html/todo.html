@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="radio jsRadio" aria-label="Sort options list">
-                    <input class="radioInput" type="radio" value="name" name="taskChoose" id="radio1">
+                    <input class="radioInput" type="radio" value="name" name="taskChoose" id="radio1" checked>
                     <label class="radioLabel" for="radio1">Name</label>
                     <input class="radioInput" type="radio" value="date" name="taskChoose" id="radio2">
                     <label class="radioLabel" for="radio2">Date</label>
@@ -41,12 +41,22 @@
             <div class="addTaskFormWrapper">
                 <div class="header">Task</div>
                 <div class="header">Date</div>
+                <div class="header">Importance</div>
                 <div class="header"></div>
                 <div>
                     <input type="text">
                 </div>
                 <div>
                     <input type="date">
+                </div>
+                <div>
+                    <select id="improtanceDropdown">
+                        <option value="low">Low</option>
+                        <option value="slightly">Slight</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="high">High</option>
+                        <option value="extreme">Extreme</option>
+                    </select>
                 </div>
                 <div>
                     <button>Add</button>
