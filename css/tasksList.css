@@ -1,0 +1,32 @@
+.low {
+    color: rgb(74, 144, 226);
+}
+
+.slight {
+    color: rgb(126, 211, 33);
+}
+
+.normal {
+    color: rgb(255, 195, 0);
+}
+
+.high {
+    color: rgb(255, 87, 34);
+}
+
+.extreme {
+    color: rgb(244, 67, 54);
+    font-weight: 600;
+}
+
+.taskContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--padding-index);
+    padding-right: var(--padding-index);
+}
+
+.taskContainer:not(:last-of-type) {
+    border-bottom: 1px solid var(--white-clr-main);
+}
