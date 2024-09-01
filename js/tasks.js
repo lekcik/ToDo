@@ -1,3 +1,12 @@
+class Task {
+    constructor(id, name, date, importance) {
+        this.id = id;
+        this.name = name;
+        this.date = date;
+        this.importance = importance;
+    }
+}
+
 let tasks = [];
 
 function idGenerator() {
@@ -98,15 +107,6 @@ function removeTask(id) {
         tasks.splice(taskIndex, 1);
         saveToStorage(tasks);
         refreshList();
-    }
-}
-
-class Task {
-    constructor(id, name, date, importance) {
-        this.id = id;
-        this.name = name;
-        this.date = date;
-        this.importance = importance;
     }
 }
 
