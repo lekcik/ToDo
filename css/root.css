@@ -2,15 +2,15 @@
     --padding-index: 1.5vw;
     --margin-index: 2vw;
     --gap-index: 0.7vw;
-    --font-size-general: calc(0.2rem + 1.3vw);
+    --font-size-general: calc(1.3vw);
 
-    --white-clr-main: rgb(232, 200, 249);
+    --white-clr-main: rgb(242, 225, 252);
     --white-clr-main-opacity-low: rgba(232, 200, 249, 0.2);
     --black-clr-main: #2e073f;
     --shadow-color-main: rgb(162, 234, 237);
 
-    --background-color-first: #2e073f;
-    --background-color-second: rgb(101, 24, 142);
+    --background-color-first: #20052b;
+    --background-color-second: rgb(98, 22, 139);
 
     --transition-fast: 0.15s;
     --transition-slow: 0.5s;
