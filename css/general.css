@@ -20,3 +20,16 @@ main {
     margin-left: 20%;
     margin-right: 20%;
 }
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: var(--font-size-mobile);
+    }
+
+    main {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+  }
