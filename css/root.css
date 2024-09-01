@@ -3,6 +3,7 @@
     --margin-index: 2vw;
     --gap-index: 0.7vw;
     --font-size-general: calc(1.3vw);
+    --font-size-mobile: calc(1.8vw);
 
     --white-clr-main: rgb(242, 225, 252);
     --white-clr-main-opacity-low: rgba(232, 200, 249, 0.2);
