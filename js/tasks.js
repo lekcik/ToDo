@@ -1,3 +1,5 @@
+let tasks = [];
+
 function idGenerator() {
     let id = '';
 
@@ -12,6 +14,20 @@ function idGenerator() {
         return id;
     }
 }
+
+function loadFromStorage() {
+    let obj_deserialized = JSON.parse(localStorage.getItem('tasksArray'));
+
+    if (!obj_deserialized || obj_deserialized.length === 0) {
+        obj_deserialized = [];
+        let task = new Task(idGenerator(), 'Create first task', 'No due date', 'Extreme');
+        obj_deserialized.push(task);
+    }
+
+    return obj_deserialized;
+}
+
+tasks = loadFromStorage();
 
 function refreshList() {
     let tasksList = document.querySelector('.jsTasksList');
@@ -55,18 +71,6 @@ function saveToStorage(obj) {
     localStorage.setItem('tasksArray', obj_serialized);
 }
 
-function loadFromStorage() {
-    let obj_deserialized = JSON.parse(localStorage.getItem('tasksArray'));
-
-    if (!obj_deserialized || obj_deserialized.length === 0) {
-        obj_deserialized = [];
-        let task = new Task(idGenerator(), 'Create first task', 'No due date', 'Extreme');
-        obj_deserialized.push(task);
-    }
-
-    return obj_deserialized;
-}
-
 function addTask() {
     let textInput = document.querySelector('.jsTextInput');
     let dateInput = document.querySelector('.jsDateInput');
@@ -105,7 +109,5 @@ class Task {
         this.importance = importance;
     }
 }
-
-let tasks = loadFromStorage();
 
 refreshList();
